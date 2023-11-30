@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body th:style="'padding: 30px'">
+        <h3>Result</h3>
+        <span th:style="'white-space: pre'" th:text="${result}"></span>
+    </body>
+    <form action="#" th:action="@{/scheduler-ui/form}" method="get">
+        <input type="submit" value="Go Back" />
+    </form>
+</html>

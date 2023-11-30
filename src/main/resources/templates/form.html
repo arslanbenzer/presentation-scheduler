@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>Presentation Scheduler</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body th:style="'padding: 30px'">
+        <h3>Enter Presentation Info</h3>
+        <form action="#" th:action="@{/scheduler-ui/schedule}" th:object="${presentationList}" method="post">
+            <p><textarea type="text" th:field="*{data}" th:style="'min-height: 250px; min-width: 220px'"></textarea></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+    </body>
+</html>
