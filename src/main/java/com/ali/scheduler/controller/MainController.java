@@ -18,7 +18,7 @@ public class MainController {
         this.scheduleService = scheduleService;
     }
 
-    @PostMapping("/schedulePresentations")
+    @PostMapping("/schedule-presentations")
     public String schedulePresentations(@RequestBody String data) {
         return scheduleService.schedulePresentations(data);
     }
